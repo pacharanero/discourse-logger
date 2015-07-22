@@ -11,7 +11,7 @@ You can see the topic_id at the end of the URL when viewing the **first** post o
 
 # usage
 * install discourse API gem:
-`gem install discourse_api` (sudo needed before gem command if you aren't using RVM)
+`$ gem install discourse_api` (sudo needed before gem command if you aren't using RVM)
 
 * get the code:
 ```
@@ -24,18 +24,18 @@ $ cd discourse_logger
 * if you are using version control (eg Git) then it's **essential** to rename the new environment variable file to something like live_env.sh and ensure this is in your .gitignore so that the credentials don't end up being committed to GitHub!
 
 * initialise the environment variables:
-`source yourenv.sh`
+`$ source yourenv.sh`
 
 * run the program:
 ```
-ruby discourse_logger.rb "your text here which will be appended to the topic"
+$ ruby discourse_logger.rb "your text here which will be appended to the topic"
 => Logged: 'your text here which will be appended to the topic' to topic ID xxx
 ```
 
 # aliased command for speed
 
 * I then aliased these commands in /etc/profile so that it would be a shorter commmand to type each time:
-`sudo nano /etc/profile`
+`$ sudo nano /etc/profile`
 
 * add this line anywhere (usually near the top is favourite):
 `alias disclog="source path/to/your/live_env.sh && ruby path/to/your/discourse_logger.rb"`
@@ -43,10 +43,10 @@ ruby discourse_logger.rb "your text here which will be appended to the topic"
 * *Ctrl-O* to save; *Ctrl-X* to exit
 
 * activate the change:
-`source /etc/profile`
+`$ source /etc/profile`
 
 * now you can append to the Discourse topic with:
 ```
-disclog "your text here which will be appended to the topic"
+$ disclog "your text here which will be appended to the topic"
 => Logged: 'your text here which will be appended to the topic' to topic ID xxx
 ```
