@@ -1,3 +1,8 @@
+env.sh
+live_env.sh
+dev_env.sh
+*env.sh
+discourse/
 *.gem
 *.rbc
 /.config
@@ -22,7 +27,6 @@ build/
 
 ## Environment normalisation:
 /.bundle/
-/vendor/bundle
 /lib/bundler/man/
 
 # for a library or gem, you might want to ignore these files since the code is
