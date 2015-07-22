@@ -31,7 +31,9 @@ $ cd discourse_logger
 ruby discourse_logger.rb "your text here which will be appended to the topic"
 => Logged: 'your text here which will be appended to the topic' to topic ID xxx
 ```
- 
+
+# aliased command for speed
+
 * I then aliased these commands in /etc/profile so that it would be a shorter commmand to type each time:
 `sudo nano /etc/profile`
 
