@@ -22,8 +22,10 @@ $ cd discourse_logger
 * if you are using version control (eg Git) then it's **essential** to rename the new environment variable file to something like live_env.sh and ensure this is in your .gitignore so that the credentials don't end up being committed to GitHub!
 
 * initialise the environment variables:
+`source yourenv.sh`
+
+* run the program:
 ```
-source yourenv.sh
 ruby discourse_logger.rb "your text here which will be appended to the topic"
 => Logged: 'your text here which will be appended to the topic' to topic ID xxx
 ```
@@ -32,9 +34,9 @@ ruby discourse_logger.rb "your text here which will be appended to the topic"
 `sudo nano /etc/profile`
 
 * add this line anywhere (usually near the top is favourite):
-`alias disclog="source path/to/your/live_env.sh && ruby path/to/your/discourse_logger.rb"
+`alias disclog="source path/to/your/live_env.sh && ruby path/to/your/discourse_logger.rb"`
 
-* Ctrl-O to save; Ctrl-X to exit
+* *Ctrl-O* to save; *Ctrl-X* to exit
 
 * activate the change:
 `source /etc/profile`
