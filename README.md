@@ -9,7 +9,7 @@ You can get an API key from your User page in Discourse (it's Admin only, but if
 
 You can see the topic_id at the end of the URL when viewing the **first** post of the topic in the web view (it's the number after the `/` after the topic slug)
 
-# Usage
+# usage
 * install discourse API gem:
 `gem install discourse_api` (sudo needed before gem command if you aren't using RVM)
 
