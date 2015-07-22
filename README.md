@@ -12,17 +12,21 @@ You can see the topic_id at the end of the URL when viewing the **first** post o
 `gem install discourse_api` (sudo needed before gem command if you aren't using RVM)
 
 * get the code:
-`$ git clone <repo_URL>` 
-`$ cd discourse_logger`
+```
+$ git clone <repo_URL>
+$ cd discourse_logger
+```
 
 * edit blank_env.sh, adding your <Discourse URL>, <your API key>, <your username> and the <topic ID> of the topic you want to append to.
 
 * if you are using version control (eg Git) then it's **essential** to rename the new environment variable file to something like live_env.sh and ensure this is in your .gitignore so that the credentials don't end up being committed to GitHub!
 
 * initialise the environment variables:
-`source yourenv.sh` 
-`ruby discourse_logger.rb "your text here which will be appended to the topic"`
- => `Logged: 'your text here which will be appended to the topic' to topic ID xxx
+```
+source yourenv.sh
+ruby discourse_logger.rb "your text here which will be appended to the topic"
+=> Logged: 'your text here which will be appended to the topic' to topic ID xxx
+```
  
 * I then aliased these commands in /etc/profile so that it would be a shorter commmand to type each time:
 `sudo nano /etc/profile`
@@ -36,5 +40,7 @@ You can see the topic_id at the end of the URL when viewing the **first** post o
 `source /etc/profile`
 
 * now you can append to the Discourse topic with:
-`disclog "your text here which will be appended to the topic"`
- => `Logged: 'your text here which will be appended to the topic' to topic ID xxx
+```
+disclog "your text here which will be appended to the topic"
+=> Logged: 'your text here which will be appended to the topic' to topic ID xxx
+```
