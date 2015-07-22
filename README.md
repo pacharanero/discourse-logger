@@ -1,10 +1,12 @@
 # discourse_logger
 
 simple command line app which uses Discourse API to append posts to a single topic in a Discourse Forum.
-I use it to quickly send a line of text to a changelog/work tracker topic on a Discourse forum I use
-you specify the URL of the Discourse forum, the user API key and username, and the topic_id to post to in the environment variable file
+I use it to quickly send a line of text to a changelog/work tracker topic on a Discourse forum I use.
 
-You can get an API key from your User page in Discourse (Admin only, but if you aren't an admin you could ask if the admin will allow you to have a key, it's only the same as being able to post through the webapp as you)
+you specify the URL of the Discourse forum, the user API key and username, and the topic_id to post to, in the environment variable file.
+
+You can get an API key from your User page in Discourse (it's Admin only, but if you aren't an admin you could ask if the admin will allow you to have a key, it's only the same as being able to post via the webapp).
+
 You can see the topic_id at the end of the URL when viewing the **first** post of the topic in the web view (it's the number after the `/` after the topic slug)
 
 # Usage
