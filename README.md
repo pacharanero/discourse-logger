@@ -1,4 +1,4 @@
-# discourse_logger
+# discourse-logger
 
 simple command line app which uses Discourse API to append posts to a single topic in a Discourse Forum.
 I use it to quickly send a line of text to a changelog/work tracker topic on a Discourse forum I use.
